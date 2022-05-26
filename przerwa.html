@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Szkolenia Delta Controls</title>
+		<script src="przerwa.js" defer></script>
+	</head>
+
+	<style>
+		body
+		{
+			text-align: center;
+		}
+		input[type = button]
+		{
+			width: 100px;
+		}
+		#zegar
+		{
+			margin-top: 20vh;
+		}
+		#komunikat, #minutnik
+		{
+			font-size: 42px;
+
+		}
+		#minutnik
+		{
+			color: red;
+		}
+	</style>
+
+	<body>
+		<div id = "zegar">
+			<p id = "komunikat">Do zakończenia przerwy pozostało:</p>
+			<p id = "minutnik"></p>
+		</div>
+		<div id = "ustawienia">
+			<input type = "number" id = "czas" min = "1" max = "60">
+			<br><br>
+			<input type = "button" id = "ustaw" value = "Ustaw">
+			<input type = "button" id = "start" value = "Start">
+		</div>
+	</body>
+	
+</html>
